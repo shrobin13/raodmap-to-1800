@@ -12,7 +12,7 @@
 ```
 
 ### A complete, structured **Obsidian vault** to go from zero to **Codeforces 1800 (Expert)**
-#### 108 notes · 61 topic deep-dives · 14-month calendar · built-in progress tracking
+#### 109 notes · 61 topic deep-dives · 14-month calendar · built-in progress tracking
 
 <br/>
 
@@ -102,6 +102,7 @@ CP-Roadmap-Vault/
 │   ├── Daily Routine.md
 │   ├── Practice Method.md
 │   ├── Contest Playbook.md
+│   ├── Mock Contest Guide.md
 │   ├── Upsolving Guide.md
 │   ├── Stress Testing.md
 │   ├── Burnout and Consistency.md

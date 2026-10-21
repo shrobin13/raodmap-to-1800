@@ -54,6 +54,11 @@ auto query = [&](int l, int r) {   // inclusive
 ## Practice plan
 
 - [ ] CSES Static Range Minimum Queries
+- [ ] SPOJ RMQSQ - Range Minimum Query
+- [ ] CF 1548B - Integers Have Friends (GCD Sparse Table + Two Pointers, 1800)
+- [ ] CF 5C - Longest Regular Bracket Sequence (Prefix Min / RMQ, 1900)
+- [ ] CF 475D - CGCDSSQ (Sparse Table on GCD values, 2000)
+- [ ] Toph - Distinct Range Queries / RMQ problems
 
 Log every attempt in [[Problem Log]]. Failed problems go to [[Mistake Log]].
 

@@ -17,14 +17,14 @@ No new topics. Review [[Weak Spots]] and redo failed problems from [[Mistake Log
 
 ## Weekly rhythm
 
-- Mon-Wed: learn the topic, implement the template, solve easier problems.
-- Thu-Fri: harder problems from [[Practice Method]] ladder.
-- Sat: live or virtual contest ([[Contest Playbook]]).
+- Mon-Wed: revisit weak topics, redo problems from [[Mistake Log]], refine templates.
+- Thu-Fri: harder problems from [[Practice Method]] ladder (stay at 1700+ rating range).
+- Sat: full virtual mock contest using [[Mock Contest Guide]].
 - Sun: upsolve ([[Upsolving Guide]]), update [[Problem Log]], [[Contest Log]] and [[Weekly Review Template]].
 
 ## Contests
 
-All rounds you can, plus 2 virtual contests a week. Redo old failed problems.
+All live rounds you can enter, plus 2 virtual mock contests per week using [[Mock Contest Guide]]. Choose past Div 2 or Educational rounds. Redo old failed problems between sessions.
 
 ## Month checkpoint
 

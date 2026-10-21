@@ -31,6 +31,8 @@ cf_tag: "trees, graphs"
 - Binary lifting in O(log n) per query.
 - Euler tour + sparse table for O(1).
 - Distance `d(u,v) = dep[u] + dep[v] - 2 * dep[lca]`.
+- **Path Aggregation:** Extend `up[v][k]` with `mx[v][k]` or `sum[v][k]` to query min/max/sum on tree paths in $O(\log N)$.
+- **Tree Difference Array:** To add $+1$ to all nodes on the path from $u$ to $v$, add $+1$ at $u$ and $v$, and $-1$ at $lca(u,v)$ and $parent(lca(u,v))$. Run a post-order DFS to accumulate.
 
 ## Template
 
@@ -57,9 +59,15 @@ auto lca = [&](int a, int b) {
 
 ## Practice plan
 
-- [ ] CSES Company Queries I
-- [ ] CSES Company Queries II
+- [ ] CSES Company Queries I (K-th ancestor)
+- [ ] CSES Company Queries II (Basic LCA)
 - [ ] CSES Distance Queries
+- [ ] CSES Counting Paths (Difference array on tree)
+- [ ] CSES Planets Queries I (Binary lifting on functional graphs)
+- [ ] CF 519E - A and B and Lecture Rooms (1700)
+- [ ] CF 832D - Misha, Vlad and Query (1800)
+- [ ] CF 1304E - 1-Trees and Queries (1900)
+- [ ] Toph - Lowest Common Ancestor category problems
 
 Log every attempt in [[Problem Log]]. Failed problems go to [[Mistake Log]].
 

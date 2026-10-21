@@ -24,28 +24,42 @@ cf_tag: "constructive algorithms"
 
 **Prerequisites:** [[Greedy Algorithms]], [[Basic Math, Parity and Divisibility]]
 
-**Unlocks:** Nothing further in this roadmap
+**Unlocks:** [[Game Theory and Minimax]], [[Phase 3 - DP and Data Structures]], Div 2 C/D Ad-hoc Reasoning
 
 ## What to learn
 
-- Brute-force small n to see the pattern, then generalize.
-- Common shapes: alternating, pairing, extremes first, sorted order, blocks.
-- Invariants and parity arguments (when is it impossible?).
-- Always check impossibility cases first, then construct.
-- Write a checker that validates your construction on random n.
+- **Brute-force small n:** Write a script or test manually on $n = 1, 2, 3, 4, 5$ to detect cyclic, parity, or recursive patterns.
+- **Common structural archetypes:**
+  - Alternating signs / colors: $(+1, -1, +1, -1)$ or chessboard coloring.
+  - Pairing / complementary sums: Pair $i$ with $n - i + 1$.
+  - Extreme values first: Place maximums and minimums at boundaries.
+  - Powers of two / binary decomposition: Deconstruct constraints bit-by-bit.
+  - Block partitioning: Solve for block size $k$ and replicate.
+- **Invariants & monovariants:** Quantities that remain constant (parity, sum mod $k$) or monotonically change.
+- **Impossibility criteria:** Always identify and handle the impossible case first (e.g., odd sum with all even operations).
+- **Stress-test checker:** Always write a small local validation script to test your construction on hundreds of small inputs before submitting.
 
 ## Resources
 
 - [Codeforces problemset (constructive algorithms)](https://codeforces.com/problemset?tags=constructive+algorithms)
 - [CSES Introductory Problems](https://cses.fi/problemset/)
+- [USACO Guide - Ad-Hoc / Constructive](https://usaco.guide/)
 
 ## Practice plan
 
 - [ ] CSES Permutations
 - [ ] CSES Gray Code
 - [ ] CSES Tower of Hanoi
-- [ ] CF constructive 900-1200: solve 20
+- [ ] CSES Grid Paths
+- [ ] CF 1388B - Reverse Binary Strings (1100)
+- [ ] CF 1472D - Even-Odd Game (1200)
+- [ ] CF 1352E - Special Elements (1300)
+- [ ] CF 1537C - Challenging Cliffs (1200)
+- [ ] CF 1618D - Array and Operations (1300)
+- [ ] CF 1515C - Phoenix and Towers (1400)
+- [ ] CF 1627C - Not Assigning (1400)
 - [ ] CF constructive 1200-1500: solve 20
+- [ ] CF constructive 1500-1700: solve 15
 
 Log every attempt in [[Problem Log]]. Failed problems go to [[Mistake Log]].
 

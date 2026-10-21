@@ -13,6 +13,14 @@ tags: [strategy]
 5. Look for the property that speeds it up (sorting, monotonicity, math, graph model).
 6. Prove or stress test the idea ([[Stress Testing]]).
 7. Code carefully and test edge cases (n = 1, all equal, maximum values).
+8. **Debug before giving up:** compile with `-fsanitize=address,undefined`, add `cerr` prints, test the smallest failing case by hand. Most WA is a code bug, not a wrong idea.
+
+## Debugging toolkit
+
+- Compile: `g++ -std=c++17 -O2 -Wall -Wextra -fsanitize=address,undefined -D_GLIBCXX_DEBUG`
+- Print all variables in the failing test case with `cerr`.
+- Shrink the failing input to the smallest possible case.
+- Check: off-by-one, uninitialized variables, wrong answer for n=1 or n=2.
 
 ## The stuck rule
 

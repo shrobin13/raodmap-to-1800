@@ -28,18 +28,59 @@ cf_tag: "interactive"
 
 ## What to learn
 
-- Always flush after printing (`cout << endl` or `cout.flush()`).
-- Binary search with limited queries.
-- Never print extra output.
+- **Always flush** after every output line: use `cout << endl` (slower) or `cout << '\n' << flush`. Never `ios::sync_with_stdio(false)` without adding `cout.flush()` after each query.
+- Binary search with limited queries: think about how many bits you need (e.g. 30 queries → up to 2^30).
+- Never output extra newlines or debug prints during submission.
+- Read the judge's response before printing the next query.
+- Pattern: `print query -> flush -> read response -> decide next query`.
+
+## Template
+
+```cpp
+// Interactive template
+#include <bits/stdc++.h>
+using namespace std;
+
+int query(int x) {
+    cout << "? " << x << '\n';
+    cout.flush();      // NEVER FORGET THIS
+    int response;
+    cin >> response;
+    return response;
+}
+
+void answer(int x) {
+    cout << "! " << x << '\n';
+    cout.flush();
+}
+
+void solve() {
+    int lo = 1, hi = 1e9;
+    while (lo < hi) {
+        int mid = lo + (hi - lo) / 2;
+        if (query(mid) == 1) hi = mid;   // adapt condition to problem
+        else lo = mid + 1;
+    }
+    answer(lo);
+}
+
+int main() {
+    int t; cin >> t;
+    while (t--) solve();
+}
+```
 
 ## Resources
 
 - [Toph Interactive category](https://toph.co/problems/interactive)
+- [Codeforces: interactive problems tag](https://codeforces.com/problemset?tags=interactive)
 
 ## Practice plan
 
 - [ ] Toph Interactive: 3 easiest
-- [ ] CF interactive 1200-1600: 5
+- [ ] CF interactive 1200-1600: solve 8
+- [ ] CF 862B: Mahmoud and Ehab and the bipartiteness (interactive, classic)
+- [ ] Practice writing and testing with local stdin/stdout swaps
 
 Log every attempt in [[Problem Log]]. Failed problems go to [[Mistake Log]].
 
